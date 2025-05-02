@@ -1,11 +1,11 @@
 const express = require("express");
 const router = express.Router();
-const {register,addAddress} = require("../controllers/empController");
+const {registerWithAddress} = require("../controllers/empController");
 
 
-router.post("/empregister", register);
+router.post("/registerwithaddress", registerWithAddress);
 
-router.post("/empaddress", addAddress);
+
 
 
 module.exports = router;
